@@ -1,9 +1,10 @@
 import turtle as t
+"""we first import turtle and set speed and hide the turtle for appropriate results"""
 
 t.speed(30)
 t.hideturtle()
 
-def pole1(pole_color,length,width):
+def pole1(pole_color,length,width): #pole one
     t.penup()
     t.goto(-100,-150)
     t.pendown()
@@ -20,7 +21,7 @@ def pole1(pole_color,length,width):
     t.end_fill()
 
 
-def flag1(flag_color,length,width):
+def flag1(flag_color,length,width): # flag 1
     t.penup()
     t.goto(-100,200)
     t.pendown()
@@ -36,7 +37,7 @@ def flag1(flag_color,length,width):
     t.end_fill()
 
 
-def circle_1(radius,circle_color):
+def circle_1(radius,circle_color): # circle of flag 1
     t.penup()
     t.goto(30,150)
     t.pendown()
@@ -46,7 +47,7 @@ def circle_1(radius,circle_color):
     t.end_fill()
 
 
-def pole2(pole_color,length,width):
+def pole2(pole_color,length,width): # pole 2
     t.penup()
     t.goto(150,-150)
     t.pendown()
@@ -64,7 +65,7 @@ def pole2(pole_color,length,width):
 
 
 
-def flag2(flag_color,length,width):
+def flag2(flag_color,length,width):  # flag 2
     t.penup()
     t.goto(150,100)
     t.pendown()
@@ -81,7 +82,7 @@ def flag2(flag_color,length,width):
     t.end_fill()
 
 
-def circle2(circle_color,radius):
+def circle2(circle_color,radius):  # circle of flag 2
     t.penup()
     t.goto(260,50)
     t.pendown()
@@ -91,7 +92,7 @@ def circle2(circle_color,radius):
     t.end_fill()
 
 
-def main():
+def main():                  # calling all te functions from main and giving them values
     t.bgcolor('sky blue')
     pole1('black',350,10)
     flag1('red',200,100)
